@@ -1,0 +1,5 @@
+--require test/helpers
+--require babel-core/register
+--reporter spec
+--compilers js:babel-core/register
+--slow 5000
