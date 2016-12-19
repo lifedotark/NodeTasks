@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js --presets es2015,stage-2",
-    "test": "NODE_ENV=tests mocha test/**/*.js"
+    "test": "clear && NODE_ENV=tests mocha test/**/*.js",
+    "test_windows": "cls && set NODE_ENV=tests && mocha test/**/*.js"
   },
   "author": "Vinicius Silva Ramos",
   "dependencies": {

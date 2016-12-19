@@ -32,6 +32,4 @@ module.exports = app =>{
             res.status(412).json({msg: error.message});
         });
     });
-    
-    console.log(1)
 }

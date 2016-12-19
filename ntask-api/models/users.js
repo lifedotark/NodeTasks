@@ -21,6 +21,13 @@ module.exports = (sequelize, DataType) => {
            validate: {
                notEmpty: true
            }
+       },
+       password: {
+           type: DataType.STRING,
+           allowNull: false,
+           validate: {
+               notEmpty: true
+           }
        }
     },{
         classMethods: {
@@ -34,7 +41,7 @@ module.exports = (sequelize, DataType) => {
         hooks:{
             beforeCreate: user => {
                 const salt = bcrypt.genSaltSync();
-                user.passport = bcrypt.hashSync(user.password, salt);
+                user.password = bcrypt.hashSync(user.password, salt);
             }
         }
     });

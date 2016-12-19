@@ -46,4 +46,7 @@ jspm_packages
 # Yarn Integrity file
 
 #sqlite
-*.sqlite
+*.sqlite*
+
+#preserve?
+preserve/
