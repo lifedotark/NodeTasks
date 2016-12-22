@@ -3,7 +3,7 @@ exports.render = () => {
         <div class="list">
             <label class="itemm item-input item-stacked-label">
                 <span class="input-label">Nome</span>
-                <input type="text" data-nome>
+                <input type="text" data-name>
             </label>
             <label class="itemm item-input item-stacked-label">
                 <span class="input-label">Email</span>

@@ -1,4 +1,4 @@
-import App from "./app.js"
+import App from "./app.js";
 
 window.onload = () => {
     const main = document.querySelector("main");

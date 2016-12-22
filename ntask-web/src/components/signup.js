@@ -36,7 +36,7 @@ class Signup extends NTask {
                 }
             };
 
-            this.request(opts, (err, rest, data) => {
+            this.request(opts, (err, res, data) => {
                 if(err || res.status === 412){
                     this.emit("error", err);
                 }else{

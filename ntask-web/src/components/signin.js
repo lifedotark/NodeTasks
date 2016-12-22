@@ -1,5 +1,5 @@
 import NTask from "../ntask.js";
-import Tamplate from "../templates/signin.js"
+import Template from "../templates/signin.js"
 
 class Signin extends NTask{
     constructor(body){
@@ -52,4 +52,4 @@ class Signin extends NTask{
     }
 }
 
-mmodule.exports = Signin;
+module.exports = Signin;
